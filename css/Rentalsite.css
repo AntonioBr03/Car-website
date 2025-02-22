@@ -1,0 +1,139 @@
+body {
+  background-color: #2c2c2c;
+}
+
+#TopWindowDiv1 {
+  position: relative;
+  border-bottom: 1px solid aliceblue;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#TopWIndowTitle {
+  position: relative;
+  font-size: 24px;
+  left: 100px;
+  color: azure;
+  word-spacing: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 7px;
+  text-decoration: none;
+}
+
+#TopWIndowTitle:hover {
+  color: #ff0000bb;
+  transition: 0.4s ease-in-out;
+}
+
+#TopWIndowTitle span {
+  background-color: rgba(245, 210, 15, 0.795);
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+  margin-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+#TopWIndowTitle:hover span {
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+
+.outer-shell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5% auto;
+  width: 80%;
+  height: 80%;
+  min-width: 300px;
+  overflow: auto;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#content {
+  flex: 1;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  color: crimson;
+  width: calc(80% - 400px);
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#pictureCon {
+  height: 450px;
+  width: 450px;
+  margin: 10px;
+  flex-shrink: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#phoneNum {
+  flex-basis: 100%;
+  text-align: center;
+  color: crimson;
+}
+
+#phone {
+  text-decoration: none;
+  font-size: 18px;
+  color: aliceblue;
+  transition: 0.3s ease-in;
+}
+
+#phone:hover {
+  color: #ff0000bb;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#content,
+#desc {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: left;
+}
+h1,
+p {
+  color: aliceblue;
+}
+.carousel-item img {
+  width: 450px;
+  height: 350px;
+}
+.carousel-inner {
+  width: 450px;
+  height: 350px;
+}
+#register{
+  background-color: #2c2c2c;
+  border-bottom-color:yellow;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  color:aliceblue;
+  margin:20vh;
+  
+
+}

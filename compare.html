@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/firstPageStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/compare.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="Logo/logo.png" />
+
+    <title>Compare Cars</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="TopWindowDiv1">
+        <a id="TopWIndowTitle" href="index.html">RENTAL<span>HUB</span></a>
+      </div>
+
+      <button class="button">Compare Two Cars</button>
+
+      <div class="cmp">
+        <div class="outer">
+          <select class="carSelect" id="carSelect1">
+            <option value="" disabled selected>Select a car</option>
+            <!-- Populate options dynamically with car names -->
+          </select>
+          <button class="buttonAdd" id="addButton1">
+            <img src="./img/icons/plus-small.png" class="addIcon" /> Add
+          </button>
+          <div class="cmp-img" id="cmpImg1">
+            <div class="inner">
+              <img src="./img/icons/cars.png" class="img-icon carImage" />
+              <p class="label">Select a car to compare</p>
+            </div>
+          </div>
+        </div>
+        <div class="outer">
+          <select class="carSelect" id="carSelect2">
+            <option value="" disabled selected>Select a car</option>
+            <!-- Populate options dynamically with car names -->
+          </select>
+          <button class="buttonAdd" id="addButton2">
+            <img src="./img/icons/plus-small.png" class="addIcon" /> Add
+          </button>
+          <div class="cmp-img" id="cmpImg2">
+            <div class="inner">
+              <img src="./img/icons/cars.png" class="img-icon carImage" />
+              <p class="label">Select a car to compare</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result">
+        <p class="title">Results</p>
+        <div class="list">
+          <p class="listRow">
+            <span class="listItem">Model:</span> {Car Name} is newer
+          </p>
+          <p class="listRow">
+            <span class="listItem">Mileage:</span> {Car Name} is more fuel
+            efficient
+          </p>
+          <p class="listRow">
+            <span class="listItem">Odometer:</span> {Car Name} is driven more
+            miles
+          </p>
+          <p class="listRow">
+            <span class="listItem">Price:</span> {Car Name} is lower on price
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-div1">
+        <div class="footer-about">
+          <img src="Logo/logo.png" alt="logo" />
+          <p>
+            Effortless mobility, uncompromised quality. At RENTAL HUB, we ensure
+            that your travel experience is seamless, with every kilometer
+            offering convenience and affordability. Our extensive fleet,
+            maintained to the highest standards, guarantees a smooth and
+            comfortable journey, .
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>LINKS</h4>
+          <ul class="footer-links-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="compare.html">Services</a></li>
+            <li><a href="firstPage.html">Shop</a></li>
+            <li><a href="GetInTouch.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact info</h4>
+          <ul class="footer-contact-menu">
+            <li class="footer-contact1">
+              <a href="mailto:Contact@example.com">Contact@exampl.com</a>
+            </li>
+
+            <li class="footer-contact2">
+              <a href="tel:+9611234568" target="_blank"> +961 12 345 678 </a>
+            </li>
+
+            <li class="footer-contact3">
+              <a
+                id="TopWindowLocation"
+                href="https://maps.app.goo.gl/nCeD5gYx5n2tu2AR9"
+                target="_blank"
+              >
+                3MW3+JGP, Halat
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Social Networks</h4>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jequery.js"></script>
+    <script src="js/compare.js"></script>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+#TopWindow {
+  background-image: url(../TopHomePhotos/TopContactPhoto.PNG);
+  animation: none;
+  height: 50vh;
+}
+
+.navbar {
+  top: 2vh;
+}
+#TopWindow h1 {
+  position: relative;
+  color: aliceblue;
+  font-size: 45px;
+  width: 500px;
+  left: 50px;
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 10px;
+  top: 40px;
+}
+#NavLinkHome::before {
+  content: "";
+}
+#NavLinkHome:hover::before {
+  font-family: "Font Awesome 6 free";
+  content: "\f015";
+  color: #ffd900;
+  font-weight: 900;
+  position: absolute;
+  transform: translateX(-1.8vw);
+}
+#NavLinkContact::before {
+  font-family: "Font Awesome 6 free"; /* Use Solid for about icon (Font Awesome 6) */
+  font-weight: 900;
+  content: "\f590"; /* Unicode character for user icon (Font Awesome 6) */
+  color: #ffd900;
+  position: absolute;
+  transform: translateX(-1.8vw);
+}
+#ContactBody {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  height: 620px;
+  width: 100%;
+  height: fit-content;
+}
+
+#ContactInfo {
+  position: relative;
+  width: fit-content;
+  left: 170px;
+  top: 70px;
+  margin-right: 70px;
+}
+#ContactInfo h5,
+p {
+  color: aliceblue;
+}
+#ContactInfo h5 {
+  color: #15b3b3;
+  margin-top: 30px;
+}
+#ContactInfo h5::before {
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  color: #ff0000;
+  position: absolute;
+  transform: translateX(-4.5vw);
+  background-color: aliceblue;
+  border-radius: 100%;
+  width: fit-content;
+  padding: 11px;
+  font-size: 18px;
+}
+#ContactInfoPhone::before {
+  content: "\f095";
+}
+#ContactInfoEmail::before {
+  content: "\f0e0";
+}
+#ContactInfoLocation::before {
+  content: "\f3c5";
+}
+#ContactInfoHours::before {
+  content: "\f017";
+}
+
+#ContactInput {
+  height: 100px;
+  position: relative;
+  margin-left: auto;
+  right: 7vw;
+  top: 11vh;
+  height: fit-content;
+  align-items: flex-start;
+  width: 50vw;
+  margin-bottom: 5vh;
+}
+#ContactInput h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #15b3b3;
+}
+
+/* Styles for the form sections */
+#input-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.input-container {
+  position: relative;
+  margin: 10px;
+  width: 45%;
+  right: 10px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.error-message {
+  position: absolute;
+  color: red;
+  font-size: 0.8em;
+  display: none;
+  transform: translateY(50px);
+}
+.MessageErrorMessage {
+  transform: translateY(75px);
+}
+
+label {
+  position: absolute;
+  transform: translateY(10px);
+  color: aliceblue;
+  left: 0;
+  transition: 0.5s;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-top: 0;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 0;
+  resize: none;
+  color: aliceblue;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  cursor: text;
+}
+
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  transform: translate(-10px, -30px);
+  color: #ffd900;
+  font-size: 12px;
+}
+input:valid ~ .error-message,
+textarea:valid ~ .error-message {
+  visibility: hidden;
+  display: none;
+}
+
+#SubmitBtn {
+  background-color: transparent;
+  border: 1px solid #15b3b3;
+  padding: 12px;
+  width: 150px;
+  color: aliceblue;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 2px;
+}
+#submit-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+.fa-spinner {
+  color: aliceblue;
+  font-size: 44px;
+  position: absolute;
+  visibility: hidden;
+}
+.fa-circle-check {
+  position: absolute;
+  color: rgb(67, 235, 67);
+  font-size: 44px;
+  visibility: hidden;
+}
+#submit-box span {
+  position: relative;
+  margin-left: 25px;
+}
+
+#ReplyMessage1 {
+  position: absolute;
+  transform: translateX(90px);
+  background-color: rgba(160, 148, 148, 0.555);
+  box-shadow: 0px 30px 50px black;
+  z-index: 2;
+  opacity: 0;
+  width: fit-content;
+  height: fit-content;
+}
+
+#ReplyMessage1 p {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 35px;
+}
+
+@keyframes showReplyMessage1 {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(90px, 170px);
+  }
+  100% {
+    transform: translate(90px, 300px);
+    opacity: 0;
+  }
+}
+
+#ReplyMessage2 {
+  position: absolute;
+  transform: translate(-300px, 170px);
+  background-color: rgba(160, 148, 148, 0.555);
+  box-shadow: 0px 30px 50px black;
+  z-index: 2;
+  opacity: 0;
+  width: fit-content;
+  height: fit-content;
+}
+#ReplyMessage2 p {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 35px;
+}
+
+@keyframes showReplyMessage2 {
+  0% {
+    opacity: 0;
+    transform: translate(-300px, 170px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(90px, 170px);
+  }
+  100% {
+    transform: translate(500px, 170px);
+    opacity: 0;
+  }
+}
+
+#MapDiv {
+  position: relative;
+  border: 2px solid black;
+  width: 80%;
+  height: 70vh;
+  margin-top: 13vh;
+  align-self: center;
+}
+#MapDiv iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #TopWindow h1 {
+    font-size: 40px;
+    left: 0;
+    top: 50px;
+  }
+
+  #ContactInput {
+    margin-left: 0;
+    left: 170px;
+    flex-direction: column;
+  }
+  #input-box {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .input-container {
+    width: 100%;
+  }
+
+  #contactInfo {
+    left: 13vw;
+    top: 10vw;
+  }
+  #Submit-box {
+    margin-top: -10px;
+  }
+  #SubmitBtn {
+    width: 125px;
+    padding: 8;
+  }
+
+  #ContactInput {
+    width: 35%;
+    left: 25vw;
+  }
+  #ContactInput h2 {
+    font-size: 24px;
+  }
+
+  #ReplyMessage2 p,
+  #ReplyMessage1 p {
+    font-size: 22;
+  }
+
+  .input-container-fullname {
+    margin-bottom: 5vh;
+  }
+}
